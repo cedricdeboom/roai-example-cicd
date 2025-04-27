@@ -9,11 +9,6 @@ jobs:
   build:
     name: Continuous Integration of the endpoint
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-      attestations: write
-      id-token: write
     steps:
       - name: login to GitHub Container Registry
         # https://github.com/docker/login-action
